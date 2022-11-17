@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+import { hotjar } from "react-hotjar";
 import { useRef } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
@@ -15,6 +17,9 @@ import Cursor from "../components/Cursor";
 import data from "../data/portfolio.json";
 
 export default function Home() {
+  useEffect(() => {
+    hotjar.initialize(3251479, 6);
+  });
   // Ref
   const workRef = useRef();
   const aboutRef = useRef();

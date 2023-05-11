@@ -130,7 +130,7 @@ export default function Home() {
         {process.env.NODE_ENV === "development" && (
           <div className="hidden fixed bottom-5 right-5">
             <Link href="/edit">
-              <Button type="primary">Edit Data</Button>
+              <Button type="primary">Editdata Data</Button>
             </Link>
           </div>
         )}
